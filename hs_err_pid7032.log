@@ -1,0 +1,116 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3470), pid=7032, tid=6628
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 7.0-b147
+# Java VM: Java HotSpot(TM) Client VM (21.0-b17 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00efe400):  JavaThread "Unknown thread" [_thread_in_vm, id=6628, stack(0x01250000,0x012a0000)]
+
+Stack: [0x01250000,0x012a0000],  sp=0x0129f2dc,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1630e1]
+V  [jvm.dll+0x15dcfb]
+V  [jvm.dll+0x18e37]
+V  [jvm.dll+0x1a6a8]
+V  [jvm.dll+0x2a42f]
+V  [jvm.dll+0x2b818]
+V  [jvm.dll+0x2bedb]
+V  [jvm.dll+0x2bf2a]
+V  [jvm.dll+0x2c07d]
+V  [jvm.dll+0x2c15a]
+V  [jvm.dll+0x2c3d7]
+V  [jvm.dll+0x73cb1]
+V  [jvm.dll+0x7406b]
+V  [jvm.dll+0x121a7c]
+V  [jvm.dll+0x14382a]
+V  [jvm.dll+0xa2940]
+C  [javaw.exe+0x1359]
+C  [javaw.exe+0x1dc9]
+C  [javaw.exe+0xa0cb]
+C  [javaw.exe+0xa155]
+C  [kernel32.dll+0x1336a]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x39f72]  RtlInitializeExceptionChain+0x63
+C  [ntdll.dll+0x39f45]  RtlInitializeExceptionChain+0x36
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00efe400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6628, stack(0x01250000,0x012a0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x013a0000 - 0x013cf000 	C:\jdk\bin\javaw.exe
+0x77800000 - 0x77980000 	C:\Windows\SysWOW64\ntdll.dll
+0x77290000 - 0x773a0000 	C:\Windows\syswow64\kernel32.dll
+0x77190000 - 0x771d7000 	C:\Windows\syswow64\KERNELBASE.dll
+0x76e00000 - 0x76ea0000 	C:\Windows\syswow64\ADVAPI32.dll
+0x77080000 - 0x7712c000 	C:\Windows\syswow64\msvcrt.dll
+0x75730000 - 0x75749000 	C:\Windows\SysWOW64\sechost.dll
+0x76b50000 - 0x76c40000 	C:\Windows\syswow64\RPCRT4.dll
+0x75220000 - 0x75280000 	C:\Windows\syswow64\SspiCli.dll
+0x75210000 - 0x7521c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x76740000 - 0x76840000 	C:\Windows\syswow64\USER32.dll
+0x76ab0000 - 0x76b40000 	C:\Windows\syswow64\GDI32.dll
+0x76dc0000 - 0x76dca000 	C:\Windows\syswow64\LPK.dll
+0x76d20000 - 0x76dbd000 	C:\Windows\syswow64\USP10.dll
+0x73b00000 - 0x73c9e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x77130000 - 0x77187000 	C:\Windows\syswow64\SHLWAPI.dll
+0x75640000 - 0x756a0000 	C:\Windows\system32\IMM32.DLL
+0x76c50000 - 0x76d1c000 	C:\Windows\syswow64\MSCTF.dll
+0x72120000 - 0x72155000 	C:\Windows\SysWOW64\nvinit.dll
+0x64410000 - 0x644ce000 	C:\jdk\jre\bin\msvcr100.dll
+0x681b0000 - 0x684d1000 	C:\jdk\jre\bin\client\jvm.dll
+0x71430000 - 0x71437000 	C:\Windows\system32\WSOCK32.dll
+0x76640000 - 0x76675000 	C:\Windows\syswow64\WS2_32.dll
+0x777d0000 - 0x777d6000 	C:\Windows\syswow64\NSI.dll
+0x73fd0000 - 0x74002000 	C:\Windows\system32\WINMM.dll
+0x77070000 - 0x77075000 	C:\Windows\syswow64\PSAPI.DLL
+0x6eee0000 - 0x6eeec000 	C:\jdk\jre\bin\verify.dll
+0x6cde0000 - 0x6ce00000 	C:\jdk\jre\bin\java.dll
+0x6cdc0000 - 0x6cdd3000 	C:\jdk\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\Android\android-sdk\platforms\android-2.2_r02-windows\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 61172 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames com.test.test
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\jdk
+CLASSPATH= .;JAVA_HOME\lib\tools.jar;JAVA_HOME\lib\dt.jar
+PATH=C:/jdk/bin/../jre/bin/client;C:/jdk/bin/../jre/bin;C:/jdk/bin/../jre/lib/i386;D:\Xilinx\10.1\ISE\bin\nt64;D:\Xilinx\10.1\ISE\lib\nt64;D:\Xilinx\10.1\ISE\smartmodel\nt\installed_nt\lib\pcnt.lib;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Xilinx\10.1\ISE\bin\nt;D:\Xilinx\10.1\ISE\lib\nt;C:\opencv2.3.1\opencv\build\x86\vc10\binC:\opencv\opencv\build\x86\vc10\bin;C:\jdk\bin;C:\CTEX\CTeX\cct\bin;C:\CTEX\CTeX\ty\bin;C:\CTEX\Ghostscript\gs8.70\bin;C:\CTEX\GSview\gsview;C:\CTEX\WinEdt;D:\apache-ant-1.8.2\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;H:\myenv\apache\bin;C:\opencv2.3.1\opencv\build\common\tbb\ia32\vc10;C:\opencv2.3.1\opencv\build\x86\vc10\bin;C:\opencv\opencv\build\x86\vc10\bin;D:Android\android-sdk\toolsc:\jdk\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;D:\Android\android-sdk\platform-tools;D:\apache-ant-1.8.2\bin;H:\AppServ\Apache2.2\bin;H:\AppServ\php6;H:\AppServ\MySQL\bin;H:\AppServ\Apache2.2\bin;H:\AppServ\php5;H:\AppServ\MySQL\bin;H:\AppServ\Apache2.2\bin;H:\adobesdk\flex_sdk_4.0.0.14159A\bin;C:\Users\Rex\Desktop\android\eclipse;
+USERNAME=Rex
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 4042608k(951600k free), swap 8083352k(3253980k free)
+
+vm_info: Java HotSpot(TM) Client VM (21.0-b17) for windows-x86 JRE (1.7.0-b147), built on Jun 27 2011 02:25:52 by "java_re" with unknown MS VC++:1600
+
+time: Wed Jan 08 14:45:41 2014
+elapsed time: 0 seconds
+

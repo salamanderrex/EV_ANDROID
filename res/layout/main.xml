@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:text="showbox" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+l
+
+        <Button
+            android:id="@+id/BTlistButtonId"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="扫描周围的蓝牙设备" />
+
+        <Button
+            android:id="@+id/discoverButtonId"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="设置可见性" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/scanButtonId"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="开始扫描" />
+
+        <Button
+            android:id="@+id/stopscanButtonId"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="stop扫描" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/initialID"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="initial" />
+
+        <Button
+            android:id="@+id/clinetID"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="clinet" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/writeID"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="write" />
+
+        <Button
+            android:id="@+id/getbeanID"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="getbean" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/closeconnectID"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="closebluetooth_connection" />
+
+        <Button
+            android:id="@+id/bondstatusid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="getbondstatus" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/connectsocketid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connectsocket" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/read_basic"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="R_B" />
+
+        <Button
+            android:id="@+id/read_reference"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="r_rs" />
+    </LinearLayout>
+
+</LinearLayout>
