@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.avdpower.android.utilities.CONSTANT;
 import com.avdpower.android.utilities.bluetooth.ClsUtils;
-
+//test
 public class BluetoothConnectActivityReceiver extends BroadcastReceiver {
 
 	final String ACTION_PAIRING_REQUEST = "android.bluetooth.device.action.PAIRING_REQUEST";
