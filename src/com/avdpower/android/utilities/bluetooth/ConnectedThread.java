@@ -14,7 +14,6 @@ import com.avdpower.android.utilities.messagefactory.messageFactory_receiver;
 import android.bluetooth.BluetoothSocket;
 import android.os.Handler;
 import android.os.Message;
-
 public class ConnectedThread extends Thread {
 	private final BluetoothSocket mmSocket;
 	private final InputStream mmInStream;

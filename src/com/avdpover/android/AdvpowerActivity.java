@@ -28,7 +28,7 @@ import com.avdpower.android.utilities.PrintUtility;
 import com.avdpower.android.utilities.bluetooth.ClsUtils;
 import com.avdpower.android.utilities.bluetooth.MyBlueTooth;
 import com.avdpower.android.utilities.messagefactory.messageFactory_maker;
-
+//update from eclipse 
 public class AdvpowerActivity extends Activity {
 	/** Called when the activity is first created. */
 
