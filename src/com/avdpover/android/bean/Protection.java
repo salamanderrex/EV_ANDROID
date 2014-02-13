@@ -29,7 +29,7 @@ public class Protection extends avd_message_base_bean {
 	
 	public void initial(byte [] bytes)
 	{
-		
+		store_inner_bytes(bytes);
 		start1=bytes[0];
 		start2=bytes[1];
 		

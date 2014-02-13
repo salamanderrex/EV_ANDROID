@@ -119,17 +119,22 @@ public class messageFactory_receiver {
 
 		else if (type == EVENT.CONTROL_MODIFY || type == EVENT.CONTROL_READ) {
 			bean = new Control(bytes);
-		} else if (type == EVENT.TORQUE_READ || type == EVENT.TORQUE_MODIFY) {
+		} 
+		
+		else if (type == EVENT.TORQUE_READ || type == EVENT.TORQUE_MODIFY) {
 			bean = new Torque_PID(bytes);
-		} else if (type == EVENT.PROTECTION_READ
+		}
+		
+		else if (type == EVENT.PROTECTION_READ
 				|| type == EVENT.PROTECTION_MODIFY) {
 			bean = new Protection(bytes);
-		} else if (type == EVENT.OTHER_READ || type == EVENT.OTHER_MODIFY) {
+		} 
+		
+		else if (type == EVENT.OTHER_READ || type == EVENT.OTHER_MODIFY) {
 			bean = new Other(bytes);
 		}
 
-		else if (type == EVENT.FLUX_WEAKEN_READ
-				|| type == EVENT.FLUX_WEAKEN_MODIFY) {
+		else if (type == EVENT.FLUX_WEAKEN_READ	|| type == EVENT.FLUX_WEAKEN_MODIFY) {
 			bean = new Flux_weaken(bytes);
 		}
 
@@ -137,6 +142,9 @@ public class messageFactory_receiver {
 				|| type == EVENT.DC_CURRENT_CALICRATION_MODIFY) {
 			bean = new DC_Current_Calibration(bytes);
 		}
+		
+		
+		
 		// needing more
 		return bean;
 	}

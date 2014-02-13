@@ -255,4 +255,11 @@ public class DESUtil {
 		return bytes;
 	}
 
+	public static int boolean2int(boolean i) {
+		if (i == true) {
+			return 1;
+
+		} else
+			return 0;
+	}
 }
