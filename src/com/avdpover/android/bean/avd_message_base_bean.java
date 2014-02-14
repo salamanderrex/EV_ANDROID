@@ -12,4 +12,8 @@ public class avd_message_base_bean {
 		start2 = bytes[1];
 		end = bytes[23];
 	}
+	public byte[] reverse2bytes()
+	{
+		return null;
+	}
 }

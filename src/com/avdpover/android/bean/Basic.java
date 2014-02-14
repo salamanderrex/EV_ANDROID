@@ -57,5 +57,10 @@ public class Basic extends avd_message_base_bean {
 		
 		end=bytes[23];
 	}
+	
+	public byte[] reverse2bytes()
+	{
+		return null;
+	}
 
 }
