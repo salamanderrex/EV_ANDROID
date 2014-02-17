@@ -14,6 +14,7 @@ public class messageFactory_maker {
 	}
 
 	public static byte[] EVENT_TRIGGER_op(int event_type) {
+		//seems no longer needed
 		byte bytes[] = new byte[3];
 
 		switch (event_type) {
