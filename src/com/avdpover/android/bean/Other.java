@@ -16,7 +16,7 @@ public class Other extends avd_message_base_bean {
 	public int ECO_Iqref__4_krpm_;
 	public int ECO_Iqref_4_5krpm__;
 	public int Forward_enable_;
-	public int B_ackward__enable__;
+	public int Backward__enable__;
 	public int Brake_drive_stop_enable__;
 	public int Motor_protection_enable__;
 	public int hTorque_Reg_Acc_;
@@ -44,7 +44,7 @@ public class Other extends avd_message_base_bean {
 		ECO_Iqref__4_krpm_ = DESUtil.bytesToInt(bytes, 8, 16);
 		ECO_Iqref_4_5krpm__ = DESUtil.bytesToInt(bytes, 8, 13);
 		Forward_enable_ = DESUtil.boolean2int(DESUtil.getBit(bytes[8], 0));
-		B_ackward__enable__  = DESUtil.boolean2int(DESUtil.getBit(bytes[8], 1));
+		Backward__enable__  = DESUtil.boolean2int(DESUtil.getBit(bytes[8], 1));
 		Brake_drive_stop_enable__  = DESUtil.boolean2int(DESUtil.getBit(bytes[8], 4));
 		Motor_protection_enable__  = DESUtil.boolean2int(DESUtil.getBit(bytes[8], 5));
 		hTorque_Reg_Acc_ = DESUtil.bytesToInt(bytes, 8, 13);
@@ -73,14 +73,34 @@ public class Other extends avd_message_base_bean {
 		DESUtil.create_bytes(bytes, ECO_Iqref__4_krpm_, 8, 16);
 		DESUtil.create_bytes(bytes, ECO_Iqref_4_5krpm__, 8, 19);
 		
+		byte temp=0x00;
+		if(Forward_enable_==1)
+		{
+			temp=(byte)(temp|0x01);
+		}
 		
-		DESUtil.create_bytes(bytes, Iqref_2_krpm_, 8, 21);
-		DESUtil.create_bytes(bytes, Iqref_2_5_krpm_, 8, 22);
-		DESUtil.create_bytes(bytes, Iqref_3_krpm_, 8, 17);
-		DESUtil.create_bytes(bytes,Iqref_3_5_krpm_ , 8, 18);
-		DESUtil.create_bytes(bytes,Iqref_4_krpm_ , 8, 19);
-		DESUtil.create_bytes(bytes,Iqref_4_5_krpm_ , 8, 9);
-
+		if(Backward__enable__==1)
+		{
+			temp=(byte)(temp|0x02);
+		}
+		if(Brake_drive_stop_enable__==1)
+		{
+			temp=(byte)(temp|0x10);
+		}
+		if(Motor_protection_enable__==1)
+		{
+			temp=(byte)(temp|0x20);
+		}
+		
+		bytes[8]=temp;
+		
+		
+		
+		DESUtil.create_bytes(bytes, hTorque_Reg_Acc_, 16, 3);
+		DESUtil.create_bytes(bytes,hTorque_Reg_DEC_, 16, 14);
+		DESUtil.create_bytes(bytes, Motor_switch_T_, 8, 20);
+		DESUtil.create_bytes(bytes,Motor_hysteretic_ , 8, 11);
+	
 		
 		bytes[23]=end;
 		return bytes;

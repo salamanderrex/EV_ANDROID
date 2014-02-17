@@ -61,4 +61,68 @@ public class DC_Current_Calibration extends avd_message_base_bean {
 
 		end = bytes[23];
 	}
+	
+	
+	public byte[] reverse2bytes()
+	{
+		byte [] bytes=new byte[24];
+		bytes[0]=(byte)0xFB;
+		bytes[1]=(byte)0xEE;
+		
+		DESUtil.create_bytes(bytes, Idc_gain, 16, 19);
+		DESUtil.create_bytes(bytes, Idc_D2_power, 8, 21);
+		DESUtil.create_bytes(bytes, Iac_ADC_Value_128A, 16, 16);
+		DESUtil.create_bytes(bytes, Flux_period, 8, 15);
+		DESUtil.create_bytes(bytes, Mot_over_heat, 8,5 );
+		DESUtil.create_bytes(bytes, Mot_oh_recover, 8, 7);
+		DESUtil.create_bytes(bytes, Reference_period, 8, 18);
+		DESUtil.create_bytes(bytes, Mot_high_temperature, 8, 6);
+	
+
+		
+		byte temp=0x00;
+		if(Forward_level==1)
+		{
+			temp=(byte)(temp|0x01);
+		}
+		
+		if(Backward_level==1)
+		{
+			temp=(byte)(temp|0x02);
+		}
+		if(Brake_high_level==1)
+		{
+			temp=(byte)(temp|0x04);
+		}
+		if(Brake_low_level==1)
+		{
+			temp=(byte)(temp|0x10);
+		}
+		
+		if(BHA==1)
+		{
+			temp=(byte)(temp|0x08);
+		}
+		
+		
+		if(BLA==1)
+		{
+			temp=(byte)(temp|0x40);
+		}
+		
+		bytes[4]=temp;
+		
+		
+		
+		DESUtil.create_bytes(bytes, Serial_num_project, 16, 8);
+		DESUtil.create_bytes(bytes,Serial_num_year, 8, 10);
+		DESUtil.create_bytes(bytes, Serial_num_week, 8, 11);
+		DESUtil.create_bytes(bytes,Serial_num_serial_num , 16, 12);
+		DESUtil.create_bytes(bytes,Serial_num_customer_code , 8, 14);
+
+	
+		
+		bytes[23]=end;
+		return bytes;
+	}
 }

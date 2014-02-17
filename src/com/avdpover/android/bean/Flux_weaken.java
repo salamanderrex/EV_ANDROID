@@ -49,4 +49,33 @@ public class Flux_weaken extends avd_message_base_bean {
 
 		end = bytes[23];
 	}
+	
+	
+	
+	public byte[] reverse2bytes()
+	{
+		byte [] bytes=new byte[24];
+		bytes[0]=(byte)0xD6;
+		bytes[1]=(byte)0xC7;
+		
+		DESUtil.create_bytes(bytes, Flux_Q_500rpm, 8, 10);
+		DESUtil.create_bytes(bytes, Flux_Q_500_1krpm, 8, 11);
+		DESUtil.create_bytes(bytes, Flux_Q_1_1_5krpm, 8, 12);
+		DESUtil.create_bytes(bytes, Flux_Q_1_5_2krpm, 8, 13);
+		DESUtil.create_bytes(bytes, Flux_Q_2_2_5krpm, 8,14 );
+		DESUtil.create_bytes(bytes, Hall_calib_ref_acc, 16, 2);
+		DESUtil.create_bytes(bytes, Hall_calib_ref_dec, 16, 4);
+		DESUtil.create_bytes(bytes, Flux_Q_2_5_3krpm, 8, 15);
+		DESUtil.create_bytes(bytes,Flux_Q_3_3_5krpm, 8, 16);
+		DESUtil.create_bytes(bytes, Flux_Q_3_5_4krpm, 8, 17);
+		DESUtil.create_bytes(bytes, Flux_Q_4_4_5krpm, 8, 18);
+		DESUtil.create_bytes(bytes, Startup_speed_min, 16, 6);
+		DESUtil.create_bytes(bytes, Startup_speed_low, 16, 8);
+		DESUtil.create_bytes(bytes, Startup_speed_high, 16, 19);
+		
+
+		
+		bytes[23]=end;
+		return bytes;
+	}
 }
