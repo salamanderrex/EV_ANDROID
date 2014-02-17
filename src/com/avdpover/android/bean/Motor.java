@@ -60,4 +60,37 @@ public class Motor extends avd_message_base_bean {
 		end=bytes[23];
 
 	}
+	
+	
+	public byte[] reverse2bytes()
+	{
+		byte [] bytes=new byte[24];
+		bytes[0]=(byte)0xF6;
+		bytes[1]=(byte)0xE7;
+		
+		DESUtil.create_bytes(bytes, Pole_pair_num, 8, 2);
+		DESUtil.create_bytes(bytes, Iac_limit_level, 8, 19);
+		DESUtil.create_bytes(bytes, Angle_degree_BDir, 16, 6,true);
+		DESUtil.create_bytes(bytes, Angle_offset_square, 8, 8);
+		DESUtil.create_bytes(bytes, Vdc_filter, 8,15 );
+		DESUtil.create_bytes(bytes, Idc_filter, 8, 16);
+		DESUtil.create_bytes(bytes, Tref_filter, 8, 17);
+		DESUtil.create_bytes(bytes, Temperature_filter, 8, 18);
+		DESUtil.create_bytes(bytes, ECO_Iqref_1krpm, 8, 3);
+		DESUtil.create_bytes(bytes, ECO_Iqref_1_5krpm, 8, 4);
+		DESUtil.create_bytes(bytes, Hall_A_1_remap, 8, 9);
+		DESUtil.create_bytes(bytes, Hall_A_2_remap, 8, 10);
+		DESUtil.create_bytes(bytes, Hall_A_3_remap, 8, 11);
+		DESUtil.create_bytes(bytes, Hall_A_4_remap, 8, 12);
+		DESUtil.create_bytes(bytes, Hall_A_5_remap, 8, 13);
+		DESUtil.create_bytes(bytes, Hall_A_6_remap, 8, 14);
+		
+		DESUtil.create_bytes(bytes, Hall_group, 8, 5);
+		DESUtil.create_bytes(bytes, ECO_Iqref_2krpm, 8, 3);
+		DESUtil.create_bytes(bytes, ECO_Iqref_2_5krpm, 8, 4);
+		DESUtil.create_bytes(bytes, ECO_Iqref_3krpm, 8, 5);
+		
+		bytes[23]=end;
+		return bytes;
+	}
 }

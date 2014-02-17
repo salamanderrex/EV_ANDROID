@@ -53,4 +53,34 @@ public class Protection extends avd_message_base_bean {
 		
 		end=bytes[23];
 	}
+	
+	
+	public byte[] reverse2bytes()
+	{
+		byte [] bytes=new byte[24];
+		bytes[0]=(byte)0xF8;
+		bytes[1]=(byte)0xE9;
+		
+		DESUtil.create_bytes(bytes, Big_torque_times_, 8, 2);
+		DESUtil.create_bytes(bytes, Motor_lock_time_, 8, 3);
+		DESUtil.create_bytes(bytes, Motor_lock_Iac_, 8, 4);
+		DESUtil.create_bytes(bytes, Big_torque_Iac_, 8, 5);
+		DESUtil.create_bytes(bytes, Over_heat_point_, 8,14 );
+		DESUtil.create_bytes(bytes, Over_heat_recover_, 8, 15);
+		DESUtil.create_bytes(bytes, Temp_of_Iac_limit__, 8, 16);
+		DESUtil.create_bytes(bytes, Hall_calib_Iac_, 8, 13);
+		DESUtil.create_bytes(bytes,Flux_comp_to_Vdc__, 8, 8);
+		DESUtil.create_bytes(bytes, Iqref_1krpm__, 16, 10);
+		DESUtil.create_Specific_bytes(bytes, Iqref_1_5_krpm_, 12, 20, false);
+		DESUtil.create_bytes(bytes, Iqref_2_krpm_, 8, 21);
+		DESUtil.create_bytes(bytes, Iqref_2_5_krpm_, 8, 22);
+		DESUtil.create_bytes(bytes, Iqref_3_krpm_, 8, 17);
+		DESUtil.create_bytes(bytes,Iqref_3_5_krpm_ , 8, 18);
+		DESUtil.create_bytes(bytes,Iqref_4_krpm_ , 8, 19);
+		DESUtil.create_bytes(bytes,Iqref_4_5_krpm_ , 8, 9);
+
+		
+		bytes[23]=end;
+		return bytes;
+	}
 }

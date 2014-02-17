@@ -139,6 +139,35 @@ public class DESUtil {
 
 	}
 
+	public static void create_bytes(byte[] bytes, int i, int number_of_digits,
+			int Lower_position) {
+		create_bytes(bytes, i, number_of_digits, Lower_position, false);
+	}
+
+	public static void create_bytes(byte[] bytes, int i, int number_of_digits,
+			int Lower_position, boolean is_sign) {
+		if (8 == number_of_digits) {
+			bytes[Lower_position] = reverse_int2bytes(i, 8, is_sign)[0];
+		}
+
+		else if (16 == number_of_digits) {
+			byte[] temp_bytes;
+			temp_bytes = reverse_int2bytes(i, 16, is_sign);
+			bytes[Lower_position + 1] = temp_bytes[0];
+			bytes[Lower_position] = temp_bytes[1];
+		}
+	}
+
+	public static void create_Specific_bytes(byte[] bytes, int i, int Lower_position,
+			int Higher_position, boolean is_sign) {
+
+		byte[] temp_bytes;
+		temp_bytes = reverse_int2bytes(i, 16, is_sign);
+		bytes[Higher_position] = temp_bytes[0];
+		bytes[Lower_position] = temp_bytes[1];
+
+	}
+
 	public static byte[] reverse_int2bytes(int i, int number_of_digits)
 	/*
 	 * @return the unsign one
@@ -175,9 +204,9 @@ public class DESUtil {
 
 		abyte0[1] = (byte) ((0xff00 & i) >> 8);
 
-		abyte0[2] = (byte) ((0xff0000 & i) >> 16);
+		// abyte0[2] = (byte) ((0xff0000 & i) >> 16);
 
-		abyte0[3] = (byte) ((0xff000000 & i) >> 24);
+		// abyte0[3] = (byte) ((0xff000000 & i) >> 24);
 		return abyte0;
 	}
 
@@ -189,9 +218,9 @@ public class DESUtil {
 
 			abyte0[1] = (byte) ((0xff00 & i) >> 8);
 
-			abyte0[2] = (byte) ((0xff0000 & i) >> 16);
+			// abyte0[2] = (byte) ((0xff0000 & i) >> 16);
 
-			abyte0[3] = (byte) ((0xff000000 & i) >> 24);
+			// abyte0[3] = (byte) ((0xff000000 & i) >> 24);
 		}
 
 		else {
@@ -200,10 +229,10 @@ public class DESUtil {
 
 			abyte0[1] = (byte) ((0xff00 & i) >> 8);
 
-			abyte0[2] = (byte) ((0xff0000 & i) >> 16);
+			// abyte0[2] = (byte) ((0xff0000 & i) >> 16);
 
-			abyte0[3] = (byte) ((0xff000000 & i) >> 24);
-			abyte0[1] = (byte) (abyte0[1] | 0x80);
+			// abyte0[3] = (byte) ((0xff000000 & i) >> 24);
+			abyte0[0] = (byte) (abyte0[0] | 0x80);
 		}
 		return abyte0;
 	}

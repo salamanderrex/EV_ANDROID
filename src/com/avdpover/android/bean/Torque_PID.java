@@ -51,4 +51,33 @@ public class Torque_PID extends avd_message_base_bean {
 
 		end = bytes[23];
 	}
+	
+	
+	public byte[] reverse2bytes()
+	{
+		byte [] bytes=new byte[24];
+		bytes[0]=(byte)0xD2;
+		bytes[1]=(byte)0xC3;
+		
+		DESUtil.create_bytes(bytes, Iq_Kp_Gain_0_Pre, 8, 2);
+		DESUtil.create_bytes(bytes, Iq_Ki_Gain_0_Pre, 8, 3);
+		DESUtil.create_bytes(bytes, Iq_Kp_Gain_0, 8, 6);
+		DESUtil.create_bytes(bytes, Iq_Ki_Gain_0, 8, 7);
+		DESUtil.create_bytes(bytes, Iq_Kp_Gain_2, 8,10 );
+		DESUtil.create_bytes(bytes, Iq_Ki_Gain_2, 16, 11);
+		DESUtil.create_bytes(bytes, Iq_Kp_Gain_3, 8, 16);
+		DESUtil.create_bytes(bytes, Iq_Ki_Gain_3, 8, 4);
+		DESUtil.create_bytes(bytes,Id_Kp_Gain_0_Pre, 8, 4);
+		DESUtil.create_bytes(bytes, Id_Ki_Gain_0_Pre, 8, 5);
+		DESUtil.create_bytes(bytes, Id_Kp_Gain_0, 8, 8);
+		DESUtil.create_bytes(bytes, Id_Ki_Gain_0, 8, 9);
+		DESUtil.create_bytes(bytes, Id_Kp_Gain_2, 8, 13);
+		DESUtil.create_bytes(bytes, Id_Ki_Gain_2, 16, 14);
+		DESUtil.create_bytes(bytes,Id_Kp_Gain_3 , 8, 19);
+		DESUtil.create_bytes(bytes,Id_Ki_Gain_3 , 16, 20);
+
+		
+		bytes[23]=end;
+		return bytes;
+	}
 }

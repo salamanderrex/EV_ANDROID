@@ -53,4 +53,36 @@ public class Other extends avd_message_base_bean {
 		Motor_hysteretic_ = DESUtil.bytesToInt(bytes, 8, 13);
 		end = bytes[23];
 	}
+	
+	
+	public byte[] reverse2bytes()
+	{
+		byte [] bytes=new byte[24];
+		bytes[0]=(byte)0xFE;
+		bytes[1]=(byte)0xEF;
+		
+		DESUtil.create_bytes(bytes, Filter_of_Hall__, 8, 13);
+		DESUtil.create_bytes(bytes, Speed_of_flux_quit_, 16, 17);
+		DESUtil.create_bytes(bytes, Backward_speed_, 16, 6);
+		DESUtil.create_bytes(bytes, Percentage_in_mid_tref_, 8, 5);
+		DESUtil.create_bytes(bytes, Flux_Acc_, 8,2 );
+		DESUtil.create_bytes(bytes, Flux_Dec__, 8, 9);
+		DESUtil.create_bytes(bytes, hFlux_Quit_, 8, 10);
+		DESUtil.create_bytes(bytes, Dec_of_tref_, 16, 21);
+		DESUtil.create_bytes(bytes,ECO_Iqref_3_5krpm_, 8, 12);
+		DESUtil.create_bytes(bytes, ECO_Iqref__4_krpm_, 8, 16);
+		DESUtil.create_bytes(bytes, ECO_Iqref_4_5krpm__, 8, 19);
+		
+		
+		DESUtil.create_bytes(bytes, Iqref_2_krpm_, 8, 21);
+		DESUtil.create_bytes(bytes, Iqref_2_5_krpm_, 8, 22);
+		DESUtil.create_bytes(bytes, Iqref_3_krpm_, 8, 17);
+		DESUtil.create_bytes(bytes,Iqref_3_5_krpm_ , 8, 18);
+		DESUtil.create_bytes(bytes,Iqref_4_krpm_ , 8, 19);
+		DESUtil.create_bytes(bytes,Iqref_4_5_krpm_ , 8, 9);
+
+		
+		bytes[23]=end;
+		return bytes;
+	}
 }

@@ -14,53 +14,69 @@ public class Basic extends avd_message_base_bean {
 
 	public int DC_current;
 	public int Phase_current;
-	public float High_voltage;
-	public float High_voltage_revocer;
-	public float Low_voltage;
-	public float Low_voltage_recover;
-	public float Throttle_low;
-	public float Throttle_mid;
-	public float Throttle_high;
+	public int High_voltage;
+	public int High_voltage_revocer;
+	public int Low_voltage;
+	public int Low_voltage_recover;
+	public int Throttle_low;
+	public int Throttle_mid;
+	public int Throttle_high;
 	public int Max_speed;
 	public int ECO_speed;
 
 	// public byte [] bytes;
 
 	public Basic(byte[] bytes) {
-	
+
 		initial(bytes);
 	}
-	public Basic()
-	{
-		
+
+	public Basic() {
+
 	}
-	
-	public void initial(byte[] bytes)
-	{
+
+	public void initial(byte[] bytes) {
 		store_inner_bytes(bytes);
 		start1 = bytes[0];
 		start2 = bytes[1];
 
 		DC_current = DESUtil.bytesToUnSignInt8(bytes[12]);
-		Phase_current = DESUtil.bytesToUnSignInt16(bytes[10], bytes[11]);
-		High_voltage = ((float)DESUtil.bytesToUnSignInt16(bytes[2], bytes[3]))/100;
-		High_voltage_revocer = ((float)DESUtil.bytesToUnSignInt16(bytes[4], bytes[5]))/100;
-		Low_voltage=((float)DESUtil.bytesToUnSignInt16(bytes[6], bytes[7]))/100;
-		Low_voltage_recover=((float)DESUtil.bytesToUnSignInt16(bytes[8], bytes[9]))/100;
-		
-		Throttle_low=((float)DESUtil.bytesToUnSignInt16(bytes[13], bytes[14]))/1000;
-		Throttle_mid=((float)DESUtil.bytesToUnSignInt16(bytes[15], bytes[16]))/1000;
-		Throttle_high=((float)DESUtil.bytesToUnSignInt16(bytes[17], bytes[18]))/1000;
-		
-		Max_speed= DESUtil.bytesToUnSignInt16(bytes[19], bytes[20]);
-		ECO_speed= DESUtil.bytesToUnSignInt16(bytes[21], bytes[22]);
-		
-		end=bytes[23];
-	}
-	
-	public byte[] reverse2bytes()
-	{
-		return null;
+		Phase_current = DESUtil.bytesToInt(bytes, 16, 10);
+		High_voltage = DESUtil.bytesToUnSignInt16(bytes[2], bytes[3]);
+		High_voltage_revocer = DESUtil.bytesToUnSignInt16(bytes[4], bytes[5]);
+		Low_voltage = DESUtil.bytesToUnSignInt16(bytes[6], bytes[7]);
+		Low_voltage_recover = DESUtil.bytesToUnSignInt16(bytes[8], bytes[9]);
+
+		Throttle_low = DESUtil.bytesToUnSignInt16(bytes[13], bytes[14]);
+		Throttle_mid = DESUtil.bytesToUnSignInt16(bytes[15], bytes[16]);
+		Throttle_high = DESUtil.bytesToUnSignInt16(bytes[17], bytes[18]);
+
+		Max_speed = DESUtil.bytesToUnSignInt16(bytes[19], bytes[20]);
+		ECO_speed = DESUtil.bytesToUnSignInt16(bytes[21], bytes[22]);
+
+		end = bytes[23];
 	}
 
+	public byte[] reverse2bytes()
+	{
+		byte [] bytes=new byte[24];
+		bytes[0]=(byte)0xF0;
+		
+		bytes[1]=(byte)0xE1;
+		
+		DESUtil.create_bytes(bytes, DC_current, 8, 12);
+		DESUtil.create_bytes(bytes, Phase_current, 16, 10);
+		DESUtil.create_bytes(bytes, High_voltage, 16, 2);
+		DESUtil.create_bytes(bytes, High_voltage_revocer, 16, 4);
+		DESUtil.create_bytes(bytes, Low_voltage, 16, 6);
+		DESUtil.create_bytes(bytes, Low_voltage_recover, 16, 8);
+		DESUtil.create_bytes(bytes, Throttle_low, 16, 13);
+		DESUtil.create_bytes(bytes, Throttle_mid, 16, 15);
+		DESUtil.create_bytes(bytes, Throttle_high, 16, 17);
+		DESUtil.create_bytes(bytes, Max_speed, 16, 19);
+		DESUtil.create_bytes(bytes, ECO_speed, 16, 21);
+		
+		bytes[23]=end;
+		return bytes;
+	}
 }

@@ -52,4 +52,33 @@ public class Control extends avd_message_base_bean {
 
 		end = bytes[23];
 	}
+	
+	
+	
+	public byte[] reverse2bytes()
+	{
+		byte [] bytes=new byte[24];
+		bytes[0]=(byte)0xF4;
+		bytes[1]=(byte)0xE5;
+		
+		DESUtil.create_bytes(bytes, Torque_Kp_G, 8, 2);
+		DESUtil.create_bytes(bytes, Torque_Kp_D, 8, 3);
+		DESUtil.create_bytes(bytes, Torque_Ki_G_LS, 16, 4);
+		DESUtil.create_bytes(bytes, Flux_Kp_G, 8, 6);
+		DESUtil.create_bytes(bytes, Flux_Kp_D, 8,7 );
+		DESUtil.create_bytes(bytes, Flux_Ki_G_Ls, 16, 8);
+		DESUtil.create_bytes(bytes, Eco_speed_kp_G, 8, 10);
+		DESUtil.create_bytes(bytes, Eco_speed_kp_D, 8, 11);
+		DESUtil.create_bytes(bytes, Speed_limit_kp_G, 8, 14);
+		DESUtil.create_bytes(bytes, Speed_limit_kp_D, 8, 15);
+		DESUtil.create_bytes(bytes, Speed_limit_ki_G, 16, 16);
+		DESUtil.create_bytes(bytes, Idc_limit_kp_G, 8, 18);
+		DESUtil.create_bytes(bytes, Idc_limit_kp_D, 8, 19);
+		DESUtil.create_bytes(bytes, Idc_limit_ki_G, 16, 20);
+		DESUtil.create_bytes(bytes, Eco_speed_ki_G, 16, 12);
+
+		
+		bytes[23]=end;
+		return bytes;
+	}
 }

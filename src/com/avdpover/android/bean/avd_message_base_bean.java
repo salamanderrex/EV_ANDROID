@@ -16,4 +16,6 @@ public class avd_message_base_bean {
 	{
 		return null;
 	}
+	
+
 }
