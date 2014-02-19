@@ -23,7 +23,7 @@ public class ConnectThread extends Thread {
 	
 	// UUID可以看做一个端口号
 
-	public boolean isConnected() {
+	public boolean isConnected() throws Exception {
 		return connectedThread.isConnected();
 	}
 

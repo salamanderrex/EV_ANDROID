@@ -281,7 +281,14 @@ public class MyBlueTooth {
 	
 	public boolean isconnected()
 	{
+		try
+		{
 		return connectThread.isConnected();
+		}
+		catch (Exception e )
+		{
+			return false;
+		}
 	}
 	
 	public void Setpaireddevice(String devicename)	
