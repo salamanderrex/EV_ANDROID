@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black"
+    >
+
+   <TableRow
+       android:id="@+id/row1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idc_gain"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15pt"
+		android:layout_marginLeft="60dp"
+		android:ems="4" android:textColor="@android:color/white" />
+   	
+   		<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idc ave factor"
+        android:layout_marginLeft="50dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+  		<EditText
+  		    android:gravity="center"  android:id="@+id/editText_iaf"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:textSize="15pt"
+  		    android:layout_marginLeft="60dp"
+  		    android:ems="4" android:textColor="@android:color/white" />
+   
+   		<TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   
+   </TableRow> 
+    
+   <TableRow
+       android:id="@+id/row2"
+       android:layout_below="@+id/row1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="0dp" >
+     
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Idc D2 power"
+           android:textColor="@android:color/white"
+           android:textSize="15pt" />
+
+   	<EditText
+   	    android:gravity="center"  android:id="@+id/editText_idp"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:textSize="15pt"  
+   	    android:layout_marginLeft="60dp"
+   	    android:ems="4" android:textColor="@android:color/white" />
+   	
+   	<TextView
+   	    android:id="@+id/textView2"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginLeft="30dp"
+   	    android:text="Idc calib times"
+   	    android:textColor="@android:color/white"
+   	    android:textSize="15pt" />
+
+   <EditText
+       android:gravity="center"  android:id="@+id/editText_ict"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="60dp"
+       android:textSize="15pt"
+	   android:ems="4" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   </TableRow>
+   
+   <TableRow
+       android:id="@+id/row3"
+       android:layout_below="@+id/row2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="0dp" >
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Iac ADC Value 128A"
+           android:textColor="@android:color/white"
+           android:textSize="15pt" />
+
+   	<EditText
+   	    android:gravity="center"  android:id="@+id/editText_iav1"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:textSize="15pt"
+   	    android:layout_marginLeft="60dp"
+   	    android:ems="4" android:textColor="@android:color/white" />
+   	
+   	<TextView
+   	    android:id="@+id/textView2"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginLeft="30dp"
+   	    android:text="Ic ADC value 128A"
+   	    android:textColor="@android:color/white"
+   	    android:textSize="15pt" />
+
+   <EditText
+       android:gravity="center"  android:id="@+id/editText_icav1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="15pt"
+       android:layout_marginLeft="60dp"
+       android:ems="4" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+   
+   <TableRow
+       android:id="@+id/row4"
+       android:layout_below="@+id/row3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="0dp" >
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Flux period[ms]"
+           android:textColor="@android:color/white"
+           android:textSize="15pt" />
+
+   	<EditText
+   	    android:gravity="center"  android:id="@+id/editText_fp"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:textSize="15pt"
+		android:layout_marginLeft="60dp"
+		android:ems="4" android:textColor="@android:color/white" />
+   	
+   	<TextView
+   	    android:id="@+id/textView2"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginLeft="30dp"
+   	    android:text="Reference period[ms]"
+   	    android:textColor="@android:color/white"
+   	    android:textSize="15pt" />
+
+   <EditText
+       android:gravity="center"  android:id="@+id/editText_rp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="15pt"
+       android:layout_marginLeft="60dp"
+       android:ems="4" android:textColor="@android:color/white" />
+   
+</TableRow>
+  
+   <TableRow
+       android:id="@+id/row5"
+       android:layout_below="@+id/row4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="0dp" >
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Mot over heat"
+           android:textColor="@android:color/white"
+           android:textSize="15pt" />
+
+   	<EditText
+   	    android:gravity="center"  android:id="@+id/editText_moh"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:textSize="15pt"
+		android:layout_marginLeft="60dp"
+		android:ems="4" android:textColor="@android:color/white" />
+   	
+   	<TextView
+   	    android:id="@+id/textView2"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginLeft="30dp"
+   	    android:text="Mot high temperature"
+   	    android:textColor="@android:color/white"
+   	    android:textSize="15pt" />
+
+   <EditText
+       android:gravity="center"  android:id="@+id/editText_mht"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="15pt"
+       android:layout_marginLeft="60dp"
+       android:ems="4" android:textColor="@android:color/white" />
+   
+
+       
+   </TableRow>
+   
+  	<TableRow
+  	    android:id="@+id/row6"
+       android:layout_below="@+id/row5"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginTop="0dp" >
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Mot oh recover"
+           android:textColor="@android:color/white"
+           android:textSize="15pt" />
+
+   		<EditText
+   		    android:gravity="center"  android:id="@+id/editText_mor"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:textSize="15pt"
+			android:layout_marginLeft="60dp"
+			android:ems="4" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+   		     android:id="@+id/textView1"
+   		     android:layout_width="wrap_content"
+   		     android:layout_height="50dp"
+   		     android:layout_marginLeft="40dp"
+   		     android:text="Reserve level"
+   		     android:textColor="@android:color/white"
+   		     android:textSize="15pt" />
+
+   		<Button
+        android:id="@+id/spinner_rl"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="15pt" 
+         />
+   	
+   
+   </TableRow>
+
+  	<TableRow
+  	    android:id="@+id/row7"
+	    android:layout_below="@+id/row6"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content" >
+
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward level"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+       <Button
+           android:id="@+id/button_fl"
+           android:layout_width="120dp"
+           android:layout_height="45dp"
+           android:layout_marginLeft="60dp" 
+           android:textSize="10pt"
+           android:text="H"/>
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brake high level"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<Button
+        android:id="@+id/button_bhl"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:textSize="10pt"
+        android:layout_marginLeft="60dp" 
+        android:text="H"/>
+   		
+   		<CheckBox
+        android:id="@+id/checkBox_bha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BHA"
+        android:layout_marginLeft="60dp" 
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+  	
+  	<TableRow
+  	    android:id="@+id/row8"
+       android:layout_below="@+id/row7"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginTop="0dp" >
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backward level"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<Button
+        android:id="@+id/button_bl"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:textSize="10pt" 
+        android:layout_marginLeft="60dp" 
+        android:text="H"/>
+   		
+   		<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brake low level"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<Button
+        android:id="@+id/button_bll"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:textSize="10pt"
+        android:layout_marginLeft="60dp"
+        android:text="H"/>
+   		
+   		<CheckBox
+        android:id="@+id/checkBox_bla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLA"
+        android:textSize="15pt"
+        android:layout_marginLeft="60dp"
+        android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+
+   <TableRow
+       android:id="@+id/row9"
+       android:layout_below="@+id/row8"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="0dp" >
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" >
+           
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Serial Num"
+               android:textColor="@android:color/white"
+               android:textSize="15pt"/>
+           
+           <EditText
+        android:gravity="center"  
+        android:id="@+id/editText_snp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="10pt"  android:ems="4" android:textColor="@android:color/white" />
+           
+           <View android:layout_width="20dp"
+    	android:layout_height="2pt"
+    	android:layout_gravity="center"
+		android:background="#FFFFFF" />
+           
+           <EditText
+        android:gravity="center"  android:id="@+id/editText_sny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"  android:ems="4" android:textColor="@android:color/white" />
+           
+           <View android:layout_width="20dp"
+    	android:layout_height="2pt"
+    	android:layout_gravity="center"
+		android:background="#FFFFFF" />
+           
+           <EditText
+        android:gravity="center"  
+        android:id="@+id/editText_snw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"  android:ems="4" android:textColor="@android:color/white" />
+           
+           <View android:layout_width="20dp"
+    	android:layout_height="2pt"
+    	android:layout_gravity="center"
+		android:background="#FFFFFF" />
+           
+           <EditText
+        android:gravity="center"  android:id="@+id/editText_snsn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"  android:ems="4" android:textColor="@android:color/white" />
+           
+           <View android:layout_width="20dp"
+    	android:layout_height="2pt"
+    	android:layout_gravity="center"
+		android:background="#FFFFFF" />
+           
+           <EditText
+        android:gravity="center"  android:id="@+id/editText_sncc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:ems="4" android:textColor="@android:color/white" />
+           
+
+           
+       </LinearLayout>
+   
+   </TableRow>
+
+  <TableRow
+      android:id="@+id/row10"
+      android:layout_below="@+id/row9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" >
+  	    
+      	
+    
+      
+  	    <Button
+        android:id="@+id/button1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="300dp"
+        android:text="Read"/>
+  	    
+  	    
+    	<Button
+        android:id="@+id/button2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textColor="@android:color/white"
+        android:text="Write" />
+  	    
+  	</TableRow>
+
+  	
+</RelativeLayout>

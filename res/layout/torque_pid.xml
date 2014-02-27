@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black"
+    >
+
+   <TableRow>
+       
+       
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iq Kp Gain 0 Pre"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_iqkpg0p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   		<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Kp Gain 0 Pre"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+  		<EditText
+        android:gravity="center"  android:id="@+id/editText_idkpg0p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   		<TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   
+   </TableRow> 
+    
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+     
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iq Ki Gain 0 Pre"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_iqkig0p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Ki Gain 0 Pre"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_idkig0p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   </TableRow>
+   
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+       
+   
+  
+   	
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iq Kp Gain 0"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_iqkpg0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Kp Gain 0"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_idkpg0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iq Ki Gain 0"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_iqkig0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Ki Gain 0"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_idkig0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+  
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iq Kp Gain 2"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_iqkpg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Kp Gain 2"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_idkpg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXXXXX"
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+   
+   
+  	<TableRow
+       android:layout_marginTop="5dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iq Ki Gain 2"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_iqkig2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Ki Gain 2"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_idkig2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+
+  	<TableRow
+       android:layout_marginTop="5dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iq Kp Gain 3"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_iqkpg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Kp Gain 3"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_idkpg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+  	
+  	<TableRow
+       android:layout_marginTop="5dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iq Ki Gain 3"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_iqkig3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Ki Gain 3"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_idkig3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+   	
+   
+   </TableRow>
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+   	
+   
+   </TableRow>
+  	
+  	<TableRow >
+  	    <TextView
+		android:text="Z"
+		android:textSize="5pt"
+		android:textColor="@android:color/black"
+		/>
+  	</TableRow>
+  <TableRow>
+
+  	    
+  	    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:text="Read"/>
+  	    
+  	    <TextView
+		android:text="Z"
+		android:textSize="15pt"
+		android:textColor="@android:color/black"
+		/>
+    
+    	<Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="30dp"
+        android:text="Write" />
+  	    
+  	</TableRow>
+  	
+  	
+  	
+  	
+  	
+</TableLayout>

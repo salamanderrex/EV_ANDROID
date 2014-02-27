@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black"
+    >
+
+   <TableRow>
+       
+       
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter of Hall"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_foh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   		<CheckBox
+        android:id="@+id/checkBox_fe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward enable"
+        android:layout_marginLeft="24dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+   
+   </TableRow> 
+    
+   
+   <TableRow
+       android:layout_marginTop="2dp"
+       >
+     
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed of flux quit[rpm]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_sofq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<CheckBox
+        android:id="@+id/checkBox_be"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backward enable"
+        android:layout_marginLeft="24dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+   </TableRow>
+   
+   
+   <TableRow
+       android:layout_marginTop="2dp"
+       >
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backward speed[rpm]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_bs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<CheckBox
+        android:id="@+id/checkBox_bdse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brake drive stop enable"
+        android:layout_marginLeft="24dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+       
+   </TableRow>
+   
+   <TableRow
+       android:layout_marginTop="2dp"
+       >
+
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentage in mid tref"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_pimt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<CheckBox
+        android:id="@+id/checkBox_mpe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motor protection enable"
+        android:layout_marginLeft="24dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+   </TableRow>
+  
+   
+   <TableRow
+       android:layout_marginTop="2dp"
+       >
+
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Acc"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_fa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+       
+   </TableRow>
+   
+   
+  	<TableRow
+       android:layout_marginTop="2dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Dec"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_fd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		
+   
+   </TableRow>
+
+  	<TableRow
+       android:layout_marginTop="2dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hFlux_Quit"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_hq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hTorque_Reg_ACC"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_hra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+  	
+  	<TableRow
+       android:layout_marginTop="2dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dec of tref"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hTorque_Reg_DEC"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_hrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+   <TableRow
+       android:layout_marginTop="2dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECO Iqref 3.5krpm"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ei3dot5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motor switch T[deg]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_mst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+   
+   
+    <TableRow
+       android:layout_marginTop="2dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECO Iqref 4krpm"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ei4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MotorT hysteretic[Deg]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_mh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+  	
+    
+    
+     <TableRow
+       android:layout_marginTop="2dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECO Iqref 4.5krpm"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ei4dot5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		</TableRow>
+    
+
+  <TableRow>
+
+  	    
+  	    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:text="Read"/>
+  	    
+  	    <TextView
+		android:text="Z"
+		android:textSize="15pt"
+		android:textColor="@android:color/black"
+		/>
+    
+    	<Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/white"
+        android:text="Write" />
+  	    
+  	</TableRow>
+  	
+  	
+  	
+  	
+  	
+</TableLayout>

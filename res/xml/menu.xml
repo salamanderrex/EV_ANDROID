@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <Preference
+        android:key="a"
+        android:title="仪表盘"
+        />
+    
+    <Preference
+        android:key="b"
+        android:title="行车记录"
+        />
+
+    <Preference
+        android:key="c"
+        android:title="系统信息"
+        />
+    <Preference
+        android:key="d"
+        android:title="更新驱动器FW"
+        />
+    <Preference
+        android:key="e"
+        android:title="应用程序设置"
+        />
+    <Preference
+        android:key="f"
+        android:title="帮助"
+        />
+
+
+</PreferenceScreen>

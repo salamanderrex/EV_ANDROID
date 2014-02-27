@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/panel_info"
+    android:background="@android:color/black">
+    <!--  android:background="@drawable/back_p"--> 
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统信息" 
+        android:textSize="20pt"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电动汽车智能信息显示和控制系统\n版本：1.0\n通信实现：周庆予      界面制作：王驰逸\n版权所有：上海安沛动力科技有限公司"
+        android:textSize="14pt"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
