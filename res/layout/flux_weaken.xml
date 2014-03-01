@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black"
+    >
+
+   <TableRow>
+       
+       
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Q_500rpm"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_fq5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   		<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Q_2.5-3krpm"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+  		<EditText
+        android:gravity="center"  android:id="@+id/editText_fq23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   		<TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   
+   </TableRow> 
+    
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+     
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Q_500-1krpm"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_fq51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Q_3-3.5krpm"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_fq33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   </TableRow>
+   
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Q_1-1.5krpm"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_fq11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Q_3.5-4krpm"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_fq34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Q_1.5-2krpm"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_fq12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Q_4-4.5krpm"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_fq44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   </TableRow>
+  
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flux_Q_2-2.5krpm"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_fq22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Startup speed min"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_ssm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXXXXX"
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+   
+   
+  	<TableRow
+       android:layout_marginTop="5dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall calib ref acc"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_hcra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Startup speed Low"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ssl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+
+  	<TableRow
+       android:layout_marginTop="5dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall calib ref dec"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_hcrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Startup speed high"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ssh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+   	
+   
+   </TableRow>
+  	
+  	<TableRow >
+  	    <TextView
+		android:text="Z"
+		android:textSize="5pt"
+		android:textColor="@android:color/black"
+		/>
+  	</TableRow>
+  <TableRow>
+
+  	    
+  	    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:text="Read"/>
+  	    
+  	    <TextView
+		android:text="Z"
+		android:textSize="15pt"
+		android:textColor="@android:color/black"
+		/>
+    
+    	<Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/white"
+        android:text="Write" />
+  	    
+  	</TableRow>
+  	
+  	
+  	
+  	
+  	
+</TableLayout>

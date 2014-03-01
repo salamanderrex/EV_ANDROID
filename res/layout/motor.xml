@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black"
+    >
+
+   <TableRow>
+       
+       
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pole pair num"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ppn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   		<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall A 1 remap"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+  		<EditText
+        android:gravity="center"  android:id="@+id/editText_ha1r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   		<TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   
+   </TableRow> 
+    
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+     
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iac limit level[%]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_ill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall A 2 remap"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_ha2r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   </TableRow>
+   
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angel_degree_BDir"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_adb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall A 3 remap"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_ha3r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angle offset square"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_aos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall A 4 remap"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_ha4r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+  
+   
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vdc filter"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_vf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall A 5 remap"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_ha5r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:ems="5" android:textColor="@android:color/white" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXXXXX"
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+   
+   
+  	<TableRow
+       android:layout_marginTop="5dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idc filter"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_if"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall A 6 remap"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ha6r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+
+  	<TableRow
+       android:layout_marginTop="5dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tref filter"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall group"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_hg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+  	
+  	<TableRow
+       android:layout_marginTop="5dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature filter"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_tempf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECO Iqref 2krpm"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ei2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECO Iqref 1krpm"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ei1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECO Iqref 2.5krpm"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ei2dot5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+   <TableRow
+       android:layout_marginTop="5dp"
+       >
+
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECO Iqref 1.5krpm"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ei1dot5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   		
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECO Iqref 3krpm"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_ei3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="5" android:textColor="@android:color/white" />
+   	
+   
+   </TableRow>
+  	
+  	<TableRow >
+  	    <TextView
+		android:text="Z"
+		android:textSize="5pt"
+		android:textColor="@android:color/black"
+		/>
+  	</TableRow>
+  <TableRow>
+
+  	    
+  	    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:text="Read"/>
+  	    
+  	    <TextView
+		android:text="Z"
+		android:textSize="15pt"
+		android:textColor="@android:color/black"
+		/>
+    
+    	<Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/white"
+        android:text="Write" />
+  	    
+  	</TableRow>
+  	
+  	
+  	
+  	
+  	
+</TableLayout>

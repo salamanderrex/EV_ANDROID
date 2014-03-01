@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_help"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+ 
+    <!--  android:background="@drawable/back_p"-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帮助" 
+        android:textSize="24pt"
+        android:textColor="@android:color/white"/>
+            
+            
+    
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.启动界面"
+        android:textSize="18pt"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="430dp"
+        android:layout_height="245dp"
+        android:src="@drawable/startup" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在显示启动界面时，程序在后台会进行蓝牙设备的连接匹配，请耐心等待\n"
+		android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.初始界面"
+        android:textColor="@android:color/white"
+        android:textSize="18pt" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="425dp"
+        android:layout_height="265dp"
+        android:src="@drawable/initial" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这个初始化界面提示了打开程序菜单的方式：在屏幕的任意位置向右滑动\n"
+		android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. 仪表盘面板" 
+        android:textSize="18pt"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="425dp"
+        android:layout_height="265dp"
+        android:src="@drawable/carinfo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仪表盘界面显示的是采集到的实时信息，如果发生故障，在时间左方会出现警告标志，点击可打开窗口显示详细错误信息" 
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RPM：电机转速    \nIac：相电流     \nA：电池充放电电流 \n左方电池符号：电池电压    \n右方电池符号：电池余量     \nTR：油门电压值\n中央白色圆形内字符：指示档位\n"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.设置界面"
+        android:textSize="18pt"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置界面提供了各种非实时信息参数的读写设置，点击某一项，如basic打开basic设置，点击read读取信息，点击write写入信息"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+    
+    </LinearLayout>
+    </ScrollView>

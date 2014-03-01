@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black"
+    >
+
+   <TableRow>
+       
+       
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DC current[A]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_dc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+
+        
+        android:textColor="@android:color/white" android:ems="5" />
+   	
+   		<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Throttle low[V]"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+  		<EditText
+        android:gravity="center"  android:id="@+id/editText_tl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white" android:ems="5" />
+   
+   		<TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   
+   </TableRow> 
+    
+   
+   <TableRow
+       android:layout_marginTop="20dp"
+       >
+     
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phase current[A]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white" android:ems="5" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Throttle mid[V]"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_tm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white" android:ems="5" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+   </TableRow>
+   
+   
+   <TableRow
+       android:layout_marginTop="20dp"
+       >
+       
+   
+  
+   	
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High voltage[V]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_hv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white" android:ems="5" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Throttle high[V]"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_th"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:textColor="@android:color/white" android:ems="5" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+   
+   <TableRow
+       android:layout_marginTop="20dp"
+       >
+
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High voltage recover[V]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_hvr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white" android:ems="5" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max speed[rpm]"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_ms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:textColor="@android:color/white" android:ems="5" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+  
+   
+   <TableRow
+       android:layout_marginTop="20dp"
+       >
+
+   	
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low voltage[V]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   	<EditText
+        android:gravity="center"  android:id="@+id/editText_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white" android:ems="5" />
+   	
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECO speed[rpm]"
+        android:layout_marginLeft="30dp"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   <EditText
+        android:gravity="center"  android:id="@+id/editText_es"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="40dp"
+        
+        android:textColor="@android:color/white" android:ems="5" />
+   
+   <TextView
+        android:id="@+id/textView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXXXXX"
+        android:textColor="@android:color/black"
+        android:textSize="15pt"/>
+       
+   </TableRow>
+   
+   
+  	<TableRow
+       android:layout_marginTop="20dp"
+       >
+
+
+       
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low voltage recover[V]"
+        android:textSize="15pt"
+        android:textColor="@android:color/white" />
+
+   		<EditText
+        android:gravity="center"  android:id="@+id/editText_lvr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white" android:ems="5" />
+   	
+   
+   </TableRow>
+
+  	
+  	<TableRow >
+  	    <TextView
+		android:text="Z"
+		android:textSize="5pt"
+		android:textColor="@android:color/black"
+		/>
+  	</TableRow>
+  <TableRow>
+
+  	    
+  	    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@android:color/white"
+        android:text="Read"/>
+  	    
+  	    <TextView
+		android:text="Z"
+		android:textSize="15pt"
+		android:textColor="@android:color/black"
+		/>
+    
+    	<Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/white"
+        android:text="Write" />
+  	    
+  	</TableRow>
+  	
+  	
+  	
+  	
+  	
+</TableLayout>

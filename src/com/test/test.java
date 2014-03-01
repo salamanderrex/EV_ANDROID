@@ -2,7 +2,7 @@ package com.test;
 
 import org.junit.Test;
 
-import com.avdpower.android.utilities.DESUtil;
+import com.advpower.android.utilities.DESUtil;
 
 public class test {
 	@Test
